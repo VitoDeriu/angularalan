@@ -1,0 +1,66 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+:root {
+    --primary: #8064DB;
+    --secondary: #1481ba;
+    --dark: #1E1E20;
+    --light: #F5F5F5;
+
+    --b: #292929;
+    --t: #F5F5F5;
+
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        --b: #F00;
+        --t: #0f0;
+    }
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(assets/font/MontserratAlternates-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body{
+    background: var(--b);
+    color: var(--t);
+}
+
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

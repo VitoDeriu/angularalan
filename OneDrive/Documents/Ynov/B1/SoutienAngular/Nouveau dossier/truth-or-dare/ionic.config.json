@@ -1,0 +1,7 @@
+{
+  "name": "truth-or-dare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
